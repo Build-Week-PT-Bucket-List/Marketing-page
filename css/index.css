@@ -286,3 +286,37 @@ a {
   margin-left: 40%;
   font-size: 2.25rem;
 }
+.heading {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  height: 300px;
+  border: 1px solid blue;
+}
+.heading h1 {
+  font-size: 4rem;
+  border-top: 3px solid #A49989;
+  border-bottom: 3px solid #A49989;
+  margin-bottom: 20px;
+}
+.heading p {
+  letter-spacing: 0.3rem;
+  margin-bottom: 20px;
+}
+.heading button {
+  border-radius: 8px;
+  border: 2px solid #A49989;
+  margin-bottom: 50px;
+  height: 35px;
+}
+.heading button h3 {
+  font-size: 2rem;
+  letter-spacing: -0.1rem;
+}
+.heading h3 {
+  font-size: 2.5rem;
+  letter-spacing: -0.1rem;
+  margin-bottom: 20px;
+}
