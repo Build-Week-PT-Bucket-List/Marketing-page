@@ -129,9 +129,6 @@ table {
 * {
   box-sizing: border-box;
 }
-html {
-  font-size: 62.5%;
-}
 html,
 body {
   font-family: 'Montserrat', sans-serif;
@@ -159,28 +156,20 @@ p {
   width: 100%;
   margin: 0 auto;
 }
-body {
-  margin: 0;
-  background-color: #f4f4f4;
-  font-family: 'Montserrat', sans-serif;
-}
-a {
-  color: gray;
-}
 /* header */
 .header {
-  background-color: #fff;
+  background-color: white;
   box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, 0.1);
   position: fixed;
   width: 100%;
   z-index: 3;
+  font-family: 'Roboto', sans-serif;
 }
 .header ul {
   margin: 0;
   padding: 0;
   list-style: none;
   overflow: hidden;
-  background-color: #fff;
 }
 .header li a {
   display: block;
@@ -190,12 +179,12 @@ a {
 }
 .header li a:hover,
 .header .menu-btn:hover {
-  background-color: #f4f4f4;
+  background-color: #A5C3C6;
 }
 .header .logo {
   display: block;
   float: left;
-  font-size: 2em;
+  font-size: 3em;
   padding: 10px 20px;
   text-decoration: none;
 }
@@ -204,6 +193,7 @@ a {
   clear: both;
   max-height: 0;
   transition: max-height 0.2s ease-out;
+  color: black;
 }
 .header .menu-icon {
   cursor: pointer;
@@ -213,7 +203,7 @@ a {
   user-select: none;
 }
 .header .menu-icon .navicon {
-  background: #333;
+  background: #DDE8EC;
   display: block;
   height: 2px;
   position: relative;
@@ -222,7 +212,7 @@ a {
 }
 .header .menu-icon .navicon:before,
 .header .menu-icon .navicon:after {
-  background: #333;
+  background: #DDE8EC;
   content: '';
   display: block;
   height: 100%;
@@ -283,4 +273,47 @@ a {
 .aboutus h2 {
   margin-left: 40%;
   font-size: 2.25rem;
+}
+body {
+  margin: 0;
+  background-color: white;
+  font-family: 'Lobster Two', cursive;
+  color: #454245;
+}
+a {
+  color: gray;
+}
+.aboutus {
+  display: flex;
+  flex-direction: column;
+}
+.aboutus img {
+  border-radius: 25px;
+  margin-top: 2%;
+  margin-left: 15%;
+}
+.main {
+  display: flex;
+  margin-top: 5%;
+}
+.main .blocks {
+  display: flex;
+  margin-left: 10%;
+}
+.main h3 {
+  font-size: 1.95rem;
+  margin-bottom: 2%;
+  font-weight: bold;
+}
+.main h4 {
+  font-size: 1.25rem;
+  margin-bottom: 2%;
+}
+.main p {
+  font-size: 12px;
+  width: 70%;
+}
+.main a {
+  margin-top: 3%;
+  text-decoration: none;
 }
