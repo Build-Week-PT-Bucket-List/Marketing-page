@@ -350,6 +350,15 @@ a {
 .share .box-info p {
   margin-top: 20px;
 }
+.share .box-info .share-button {
+  width: 120px;
+  height: 30px;
+  background: #454245;
+  border-radius: 8px;
+}
+.share .box-info .share-button .share-button-title {
+  font-size: 1.8rem;
+}
 .share-reverse {
   display: flex;
   justify-content: space-between;
