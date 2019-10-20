@@ -293,7 +293,6 @@ a {
   justify-content: center;
   width: 100%;
   height: 300px;
-  border: 1px solid blue;
 }
 .heading h1 {
   font-size: 4rem;
@@ -323,11 +322,12 @@ a {
 .share {
   display: flex;
   justify-content: space-between;
-  border: 1px solid red;
+  background-color: #A5C3C6;
   align-items: center;
 }
 .share .boxImgOne {
-  width: 400px;
+  width: 470px;
+  height: 370px;
 }
 .share .box-info {
   display: flex;
@@ -338,4 +338,31 @@ a {
 }
 .share .box-info h2 {
   font-size: 3.5rem;
+}
+.share .box-info p {
+  margin-top: 20px;
+}
+.share-reverse {
+  display: flex;
+  justify-content: space-between;
+  background-color: #E3E2E0;
+  align-items: center;
+}
+.share-reverse .box-info-reverse {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin-left: 40px;
+  margin-right: 10px;
+}
+.share-reverse .box-info-reverse h2 {
+  font-size: 3.5rem;
+}
+.share-reverse .box-info-reverse p {
+  margin-top: 20px;
+}
+.share-reverse .boxImgTwo {
+  width: 350px;
+  height: 400px;
 }
