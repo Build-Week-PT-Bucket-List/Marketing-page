@@ -136,6 +136,10 @@ html,
 body {
   font-family: 'Montserrat', sans-serif;
   color: #454245;
+  background-image: url("../img/travel.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 h1,
 h2,
@@ -143,7 +147,7 @@ h3,
 h4,
 h5 {
   font-family: 'Roboto', sans-serif;
-  color: #A49989;
+  color: #E3E2E0;
 }
 h2 {
   font-size: 4rem;
@@ -295,26 +299,30 @@ a {
   height: 300px;
 }
 .heading h1 {
-  font-size: 4rem;
+  font-size: 4.3rem;
   border-top: 3px solid #A49989;
   border-bottom: 3px solid #A49989;
   margin-bottom: 20px;
 }
-.heading p {
+.heading .title-info {
   letter-spacing: 0.3rem;
   margin-bottom: 20px;
 }
 .heading button {
   border-radius: 8px;
   border: 2px solid #A49989;
+  padding-top: 5px;
   margin-bottom: 50px;
   height: 35px;
+  display: flex;
+  align-items: baseline;
+  background-color: #A49989;
 }
-.heading button h3 {
+.heading button .login {
   font-size: 2rem;
   letter-spacing: -0.1rem;
 }
-.heading h3 {
+.heading .learn-more {
   font-size: 2.5rem;
   letter-spacing: -0.1rem;
   margin-bottom: 20px;
@@ -345,7 +353,7 @@ a {
 .share-reverse {
   display: flex;
   justify-content: space-between;
-  background-color: #E3E2E0;
+  background-color: #A49989;
   align-items: center;
 }
 .share-reverse .box-info-reverse {
