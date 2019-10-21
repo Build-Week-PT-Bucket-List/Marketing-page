@@ -300,31 +300,30 @@ a {
 }
 .heading h1 {
   font-size: 4.3rem;
-  border-top: 3px solid #A49989;
-  border-bottom: 3px solid #A49989;
+  border-top: 3px solid #E3E2E0;
+  border-bottom: 3px solid #E3E2E0;
   margin-bottom: 20px;
 }
 .heading .title-info {
   letter-spacing: 0.3rem;
   margin-bottom: 20px;
 }
-.heading button {
+.heading .login-button {
   border-radius: 8px;
-  border: 2px solid #A49989;
+  border: 2px solid #E3E2E0;
   padding-top: 5px;
   margin-bottom: 50px;
   height: 35px;
   display: flex;
   align-items: baseline;
-  background-color: #A49989;
+  background-color: #454245;
 }
-.heading button .login {
+.heading .login-button .login {
   font-size: 2rem;
   letter-spacing: -0.1rem;
 }
 .heading .learn-more {
   font-size: 2.5rem;
-  letter-spacing: -0.1rem;
   margin-bottom: 20px;
 }
 .share {
@@ -353,8 +352,8 @@ a {
 .share .box-info .share-button {
   width: 120px;
   height: 30px;
-  background: #454245;
   border-radius: 8px;
+  background-color: #454245;
 }
 .share .box-info .share-button .share-button-title {
   font-size: 1.8rem;
