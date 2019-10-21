@@ -5,15 +5,24 @@
     justify-content: center;
     width: 100%;
     height: 300px;
+    @media @phone {
+        .phone-dimensions(230%, 720px);
+    }
     h1 {
         font-size: 4.3rem;
         border-top: 3px solid @lightest-grey;
         border-bottom: 3px solid @lightest-grey;
         margin-bottom: 20px;
+        @media @phone {
+            font-size: 7rem;
+        }
     }
     .title-info {
         letter-spacing: 0.3rem;
         margin-bottom: 20px;
+        @media @phone {
+            font-size: 4rem;
+        }
     }
     .login-button {
         border-radius: 8px;
@@ -23,15 +32,33 @@
         height: 35px;
         display: flex;
         align-items: baseline;
-        background-color: #454245;
+        background-color: @main-color;
+        @media @phone {
+            width: 30%;
+            height: 60px;
+        }
         .login {
             font-size: 2rem;
             letter-spacing: -0.1rem;
+            @media @phone {
+                font-size: 3.5rem;
+                text-align: center;
+                padding: 2%;
+                margin-left: 2%;
+            }
         }
     }
     .learn-more {
         font-size: 2.5rem;
         margin-bottom: 20px;
+        @media @phone {
+            font-size: 3.5rem;
+        }
+    }
+    .arrow {
+        @media @phone {
+            font-size: 5.5rem;
+        }
     }
 
   }
@@ -39,32 +66,57 @@
   .share {
       display: flex;
       justify-content: space-between;
-      background-color: #A5C3C6;
+      background-color: @blueish;
       align-items: center;
+      @media @tablet {
+          height: 370px;
+      }
+      @media @phone {
+          display: flex;
+          flex-direction: column-reverse;
+          .phone-dimensions(230%, 720px);
+      }
       .boxImgOne {
           width: 470px;
           height: 370px;
+          @media @phone {
+              margin-bottom: 2%;
+          }
       }
       .box-info {
-          display: flex;
-          flex-direction: column;
-          flex-wrap: wrap;
-          justify-content: space-evenly;
+          .box-info-layout(column, space-evenly);
           margin-left: 40px;
+          @media @tablet {
+              margin-top: 20px;
+          }
           h2 {
               font-size: 3.5rem;
+              @media @phone {
+                  font-size: 5rem;
+              }
               
           }
           p {
               margin-top: 20px;
+              @media @phone {
+                  font-size: 2.8rem;
+              }
           }
           .share-button {
               width: 120px;
               height: 30px;
               border-radius: 8px;
-              background-color: #454245;
+              background-color: @main-color;
+              margin-top: 20px;
+              @media @phone {
+                  width: 160px;
+                  height: 50px;
+              }
               .share-button-title {
                   font-size: 1.8rem;
+                  @media @phone {
+                      font-size: 2.5rem;
+                  }
               }
           }
       }
@@ -73,25 +125,39 @@
   .share-reverse {
     display: flex;
     justify-content: space-between;
-    background-color: #A49989;
+    background-color: @second-maincolor;
     align-items: center;
-    .box-info-reverse {
+    @media @phone {
         display: flex;
-          flex-direction: column;
-          flex-wrap: wrap;
-          justify-content: space-evenly;
-          margin-left: 40px;
-          margin-right: 10px;
+        flex-direction: column;
+        .phone-dimensions(230%, 720px);
+    }
+    .box-info-reverse {
+        .box-info-layout(column, space-evenly);
+        margin-left: 40px;
+        margin-right: 10px;
+          @media @phone {
+              margin-top: 20px;
+          }
           h2 {
               font-size: 3.5rem;
+              @media @phone {
+                  font-size: 5rem;
+              }
           }
           p {
               margin-top: 20px;
+              @media @phone {
+                  font-size: 2.8rem;
+              }
           }
     }
     .boxImgTwo {
         width: 350px;
         height: 400px;
+        @media @phone {
+            margin-bottom: 2%;
+        }
     }
   }
 
