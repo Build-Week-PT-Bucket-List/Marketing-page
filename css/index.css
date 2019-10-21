@@ -311,8 +311,8 @@ a {
 }
 @media (max-width: 500px) {
   .heading {
-    height: 720px;
     width: 230%;
+    height: 720px;
   }
 }
 .heading h1 {
@@ -408,8 +408,8 @@ a {
 .share .box-info {
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
   justify-content: space-evenly;
+  flex-wrap: wrap;
   margin-left: 40px;
 }
 @media (max-width: 800px) {
@@ -471,8 +471,8 @@ a {
 .share-reverse .box-info-reverse {
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
   justify-content: space-evenly;
+  flex-wrap: wrap;
   margin-left: 40px;
   margin-right: 10px;
 }

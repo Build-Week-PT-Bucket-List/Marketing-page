@@ -6,9 +6,7 @@
     width: 100%;
     height: 300px;
     @media @phone {
-        height: 720px;
-        width: 230%;
-
+        .phone-dimensions(230%, 720px);
     }
     h1 {
         font-size: 4.3rem;
@@ -34,7 +32,7 @@
         height: 35px;
         display: flex;
         align-items: baseline;
-        background-color: #454245;
+        background-color: @main-color;
         @media @phone {
             width: 30%;
             height: 60px;
@@ -68,7 +66,7 @@
   .share {
       display: flex;
       justify-content: space-between;
-      background-color: #A5C3C6;
+      background-color: @blueish;
       align-items: center;
       @media @tablet {
           height: 370px;
@@ -76,8 +74,7 @@
       @media @phone {
           display: flex;
           flex-direction: column-reverse;
-          width: 230%;
-          height: 720px;
+          .phone-dimensions(230%, 720px);
       }
       .boxImgOne {
           width: 470px;
@@ -87,10 +84,7 @@
           }
       }
       .box-info {
-          display: flex;
-          flex-direction: column;
-          flex-wrap: wrap;
-          justify-content: space-evenly;
+          .box-info-layout(column, space-evenly);
           margin-left: 40px;
           @media @tablet {
               margin-top: 20px;
@@ -112,7 +106,7 @@
               width: 120px;
               height: 30px;
               border-radius: 8px;
-              background-color: #454245;
+              background-color: @main-color;
               margin-top: 20px;
               @media @phone {
                   width: 160px;
@@ -131,21 +125,17 @@
   .share-reverse {
     display: flex;
     justify-content: space-between;
-    background-color: #A49989;
+    background-color: @second-maincolor;
     align-items: center;
     @media @phone {
         display: flex;
         flex-direction: column;
-        width: 230%;
-        height: 720px;
+        .phone-dimensions(230%, 720px);
     }
     .box-info-reverse {
-        display: flex;
-          flex-direction: column;
-          flex-wrap: wrap;
-          justify-content: space-evenly;
-          margin-left: 40px;
-          margin-right: 10px;
+        .box-info-layout(column, space-evenly);
+        margin-left: 40px;
+        margin-right: 10px;
           @media @phone {
               margin-top: 20px;
           }
