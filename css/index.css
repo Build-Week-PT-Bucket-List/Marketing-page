@@ -366,13 +366,14 @@ a {
   margin-bottom: 50px;
   height: 35px;
   display: flex;
+  justify-content: center;
   align-items: baseline;
   background-color: #454245;
   text-align: center;
 }
 @media (max-width: 500px) {
   .heading .login-button {
-    width: 70%;
+    width: 50%;
     height: 60px;
   }
 }
