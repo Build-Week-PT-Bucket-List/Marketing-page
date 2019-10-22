@@ -68,8 +68,9 @@
       justify-content: space-between;
       background-color: @blueish;
       align-items: center;
+      height: 370px;
       @media @tablet {
-          height: 370px;
+          height: 400px;
       }
       @media @phone {
           display: flex;
@@ -79,6 +80,7 @@
       .boxImgOne {
           width: 470px;
           height: 370px;
+          border-radius: 0;
           @media @phone {
               margin-bottom: 2%;
           }
@@ -86,8 +88,8 @@
       .box-info {
           .box-info-layout(column, space-evenly);
           margin-left: 40px;
-          @media @tablet {
-              margin-top: 20px;
+        @media @tablet {
+            margin-top: 20px;
           }
           h2 {
               font-size: 3.5rem;
@@ -122,11 +124,17 @@
       }
   }
 
+  a {
+      text-decoration: none;
+      color: @lightest-grey;
+  }
+
   .share-reverse {
     display: flex;
     justify-content: space-between;
     background-color: @second-maincolor;
     align-items: center;
+    height: 400px;
     @media @phone {
         display: flex;
         flex-direction: column;
@@ -155,6 +163,7 @@
     .boxImgTwo {
         width: 350px;
         height: 400px;
+        border-radius: 0;
         @media @phone {
             margin-bottom: 2%;
         }
