@@ -152,10 +152,6 @@ html,
 body {
   font-family: 'Montserrat', sans-serif;
   color: #454245;
-  background-image: url("../img/travel.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
 }
 h1,
 h2,
