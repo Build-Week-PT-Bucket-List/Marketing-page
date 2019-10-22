@@ -194,7 +194,7 @@ p {
 }
 body {
   margin: 0;
-  background-color: #f4f4f4;
+  background-color: #A49989;
   font-family: 'Montserrat', sans-serif;
   font-size: 16px;
 }
@@ -203,7 +203,7 @@ a {
 }
 /* header */
 .header {
-  background-color: #fff;
+  background-color: #454245;
   box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, 0.1);
   position: fixed;
   width: 100%;
@@ -214,7 +214,7 @@ a {
   padding: 0;
   list-style: none;
   overflow: hidden;
-  background-color: #fff;
+  background-color: #454245;
 }
 .header li a {
   display: block;
@@ -224,7 +224,7 @@ a {
 }
 .header li a:hover,
 .header .menu-btn:hover {
-  background-color: #f4f4f4;
+  background-color: #A5C3C6;
 }
 .header .logo {
   display: block;
@@ -658,8 +658,6 @@ img {
 .main2 .blocks2 .group6 a {
   text-decoration: none;
   color: #454245;
-
-
 }
 @media (max-width: 500px) {
   .container {
@@ -695,8 +693,3 @@ footer {
   text-align: center;
   padding: 35px;
 }
-
-}
-
-}
-
