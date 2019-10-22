@@ -534,6 +534,9 @@ a {
 .aboutus {
   display: flex;
   flex-direction: column;
+  background: #A5C3C6;
+  border-radius: 25px;
+  margin-top: 3%;
 }
 img {
   border-radius: 25px;
@@ -574,7 +577,6 @@ img {
   margin-right: 2%;
 }
 .main {
-  position: relative;
   margin-bottom: 10px;
   color: #454245;
   background: #A5C3C6;
@@ -656,4 +658,45 @@ img {
 .main2 .blocks2 .group6 a {
   text-decoration: none;
   color: #454245;
+
+
 }
+@media (max-width: 500px) {
+  .container {
+    width: 100%;
+  }
+  .aboutus img {
+    display: none;
+  }
+  .PL .whoishe {
+    margin-top: 10%;
+    width: 100%;
+  }
+  .PL .whoishe img {
+    display: none;
+  }
+  .main .blocks {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    flex-wrap: wrap;
+  }
+  .main2 .blocks2 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+}
+footer {
+  padding: 25px 0px 0px 0px;
+}
+#copyright {
+  text-align: center;
+  padding: 35px;
+}
+
+}
+
+}
+
