@@ -452,7 +452,7 @@ a {
 }
 @media (max-width: 500px) {
   .share .box-info h2 {
-    font-size: 5rem;
+    font-size: 3.25rem;
   }
 }
 .share .box-info p {
@@ -460,7 +460,7 @@ a {
 }
 @media (max-width: 500px) {
   .share .box-info p {
-    font-size: 2.8rem;
+    font-size: 2rem;
   }
 }
 .share .box-info .share-button {
@@ -481,7 +481,7 @@ a {
 }
 @media (max-width: 500px) {
   .share .box-info .share-button .share-button-title {
-    font-size: 2.5rem;
+    font-size: 2rem;
   }
 }
 a {
@@ -521,7 +521,7 @@ a {
 }
 @media (max-width: 500px) {
   .share-reverse .box-info-reverse h2 {
-    font-size: 5rem;
+    font-size: 3.25rem;
   }
 }
 .share-reverse .box-info-reverse p {
@@ -529,7 +529,7 @@ a {
 }
 @media (max-width: 500px) {
   .share-reverse .box-info-reverse p {
-    font-size: 2.8rem;
+    font-size: 2rem;
   }
 }
 .share-reverse .boxImgTwo {
