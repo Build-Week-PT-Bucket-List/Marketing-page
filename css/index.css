@@ -152,6 +152,10 @@ html,
 body {
   font-family: 'Montserrat', sans-serif;
   color: #454245;
+  background-image: url("../img/travel.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 h1,
 h2,
@@ -326,7 +330,8 @@ a {
 @media (max-width: 500px) {
   .heading {
     width: 100%;
-    height: 720px;
+    height: 100%;
+    padding-top: 50px;
   }
 }
 .heading h1 {
@@ -347,6 +352,7 @@ a {
 @media (max-width: 500px) {
   .heading .title-info {
     font-size: 4rem;
+    text-align: center;
   }
 }
 .heading .login-button {
@@ -358,10 +364,11 @@ a {
   display: flex;
   align-items: baseline;
   background-color: #454245;
+  text-align: center;
 }
 @media (max-width: 500px) {
   .heading .login-button {
-    width: 31%;
+    width: 70%;
     height: 60px;
   }
 }
@@ -371,7 +378,7 @@ a {
 }
 @media (max-width: 500px) {
   .heading .login-button .login {
-    font-size: 3.5rem;
+    font-size: 3rem;
     text-align: center;
     padding: 2%;
     margin-left: 2%;
@@ -408,7 +415,7 @@ a {
     display: flex;
     flex-direction: column-reverse;
     width: 100%;
-    height: 720px;
+    height: 100%;
   }
 }
 .share .boxImgOne {
@@ -419,6 +426,8 @@ a {
 @media (max-width: 500px) {
   .share .boxImgOne {
     margin-bottom: 2%;
+    height: auto;
+    width: 100%;
   }
 }
 .share .box-info {
@@ -486,7 +495,7 @@ a {
     display: flex;
     flex-direction: column;
     width: 100%;
-    height: 720px;
+    height: 100%;
   }
 }
 .share-reverse .box-info-reverse {
