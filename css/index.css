@@ -142,6 +142,10 @@ table {
   font-weight: bold;
   text-shadow: 2px 2px 4px black;
 }
+.flexnspace {
+  display: flex;
+  letter-spacing: 3px;
+}
 * {
   box-sizing: border-box;
 }
@@ -545,8 +549,6 @@ a {
 .aboutus {
   display: flex;
   flex-direction: column;
-  background: #A5C3C6;
-  border-radius: 25px;
   margin-top: 3%;
 }
 img {
@@ -563,7 +565,6 @@ img {
 }
 .PL .whoishe {
   background: #A5C3C6;
-  border-radius: 25px;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -582,16 +583,17 @@ img {
   text-shadow: 2px 2px 4px black;
 }
 .PL p {
-  margin-top: 2%;
+  margin-top: 5%;
   margin-left: 2%;
-  text-align: center;
+  text-align: justify;
   margin-right: 2%;
+  letter-spacing: 3px;
 }
 .main {
+  position: relative;
   margin-bottom: 10px;
   color: #454245;
   background: #A5C3C6;
-  border-radius: 25px;
 }
 .main2 {
   color: #454245;
@@ -599,6 +601,7 @@ img {
 }
 .main .blocks {
   display: flex;
+  letter-spacing: 3px;
 }
 .main .blocks h3 {
   font-size: 3.25rem;
@@ -611,6 +614,7 @@ img {
 }
 .main2 .blocks2 {
   display: flex;
+  letter-spacing: 3px;
   color: #454245;
 }
 .main2 .blocks2 h3 {
@@ -671,6 +675,9 @@ img {
   color: #454245;
 }
 @media (max-width: 500px) {
+  body {
+    background-image: none;
+  }
   .container {
     width: 100%;
   }
@@ -684,6 +691,20 @@ img {
   .PL .whoishe img {
     display: none;
   }
+  .PL .whoishe p {
+    animation-duration: 3s;
+    animation-name: slidein;
+  }
+  @keyframes slidein {
+    from {
+      margin-left: 100%;
+      width: 300%;
+    }
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+  }
   .main .blocks {
     display: flex;
     flex-direction: row;
@@ -695,6 +716,15 @@ img {
     flex-direction: row;
     flex-wrap: wrap;
     width: 100%;
+  }
+}
+@media (max-width: 800px) {
+  .container {
+    width: 100%;
+  }
+  .aboutus img {
+    width: 80%;
+    margin: 0 auto;
   }
 }
 footer {
