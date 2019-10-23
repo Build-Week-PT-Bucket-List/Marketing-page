@@ -176,6 +176,10 @@ p {
   line-height: 1.4;
   padding-bottom: 10px;
 }
+img {
+  height: auto;
+  width: 100%;
+}
 .container {
   max-width: 1100px;
   width: 100%;
@@ -184,12 +188,13 @@ p {
 @media (max-width: 800px) {
   .container {
     max-width: 800px;
+    width: 100%;
   }
 }
 @media (max-width: 500px) {
   .container {
     max-width: 500px;
-    height: 1500px;
+    width: 100%;
   }
 }
 body {
@@ -328,8 +333,9 @@ a {
 }
 @media (max-width: 500px) {
   .heading {
-    width: 230%;
-    height: 720px;
+    width: 100%;
+    height: 100%;
+    padding-top: 50px;
   }
 }
 .heading h1 {
@@ -350,6 +356,7 @@ a {
 @media (max-width: 500px) {
   .heading .title-info {
     font-size: 4rem;
+    text-align: center;
   }
 }
 .heading .login-button {
@@ -359,12 +366,14 @@ a {
   margin-bottom: 50px;
   height: 35px;
   display: flex;
+  justify-content: center;
   align-items: baseline;
   background-color: #454245;
+  text-align: center;
 }
 @media (max-width: 500px) {
   .heading .login-button {
-    width: 30%;
+    width: 50%;
     height: 60px;
   }
 }
@@ -374,7 +383,7 @@ a {
 }
 @media (max-width: 500px) {
   .heading .login-button .login {
-    font-size: 3.5rem;
+    font-size: 3rem;
     text-align: center;
     padding: 2%;
     margin-left: 2%;
@@ -410,8 +419,8 @@ a {
   .share {
     display: flex;
     flex-direction: column-reverse;
-    width: 230%;
-    height: 720px;
+    width: 100%;
+    height: 100%;
   }
 }
 .share .boxImgOne {
@@ -422,6 +431,8 @@ a {
 @media (max-width: 500px) {
   .share .boxImgOne {
     margin-bottom: 2%;
+    height: auto;
+    width: 100%;
   }
 }
 .share .box-info {
@@ -488,8 +499,8 @@ a {
   .share-reverse {
     display: flex;
     flex-direction: column;
-    width: 230%;
-    height: 720px;
+    width: 100%;
+    height: 100%;
   }
 }
 .share-reverse .box-info-reverse {
