@@ -5,12 +5,10 @@
 .aboutus{
     display:flex;
     flex-direction: column;
-    background:#A5C3C6;
-    border-radius: 25px;
     margin-top:3%;
     }
     img{
-        border-radius:25px;
+       //border-radius:25px;
         margin-top:2%;
         display: block;
         margin-left: auto;
@@ -28,10 +26,10 @@
     
     .whoishe{
         background:@blueish;
-        border-radius:25px;
-          display:flex;
-    flex-direction: row;
-    justify-content: center;
+       // border-radius:25px;
+        display:flex;
+        flex-direction: row;
+        justify-content: center;
     }
         img{
             margin-left:2%;
@@ -46,21 +44,23 @@
     }
 
     p{
-        margin-top: 2%;
+        margin-top: 5%;
         margin-left:2%;
-        text-align: center;
+        text-align: justify;
         margin-right: 2%;
+        letter-spacing: 3px;
+        
 
     }
 }
 
 // main styling 
 .main{
-	// position: relative;
+	 position: relative;
     margin-bottom:10px;
     .changecolor();
     background:#A5C3C6;
-    border-radius:25px;
+    //border-radius:25px;
 }
 .main2{
     .changecolor();
@@ -68,7 +68,7 @@
 }
 // blocks styling
 .main .blocks {
-    display:flex;
+    .flexnspace();
      h3{
         .h1effects();
     }
@@ -79,7 +79,7 @@
 }   
 
 .main2 .blocks2{
-    display:flex;
+    .flexnspace();
     .changecolor();
         h3{
             .h1effects();
@@ -90,21 +90,18 @@
         .changecolor();
         }
         .group4{
-        width: 900px;
-        padding:20px;
+        .extra-styling();
         }
         .group5{
-            width: 900px;
-            padding:20px;
+           .extra-styling();
         }
         .group6{
-            width: 900px;
-            padding:20px;
+           .extra-styling();
         }
 }
 
 // Everything get in formation
-
+// added in some animation
 // some xtra styling that wouldnt work with nesting 
 .main .blocks .group1{
 	.extra-styling();		
@@ -136,9 +133,13 @@
     .no-decor();
 }
 // media breakpoints
+// took background img out... was loading too slow
 @media @phone {
+    body{
+        background-image: none;
+    }
     .container{
-        width:100%;
+        width:100%
     }
     .aboutus{
         img{
@@ -151,6 +152,25 @@
          width:100%;
         img{
             display:none;
+        }
+        p{
+            font-size:16px;
+           margin-left:5%;
+           margin-right:5%;
+            animation-duration: 3s;
+            animation-name: slidein;
+          }
+          
+          @keyframes slidein {
+            from {
+              margin-left: 100%;
+              width: 300%; 
+            }
+          
+            to {
+              margin-left: 0%;
+              width: 100%;
+            }
         }
     }
     .main .blocks{
@@ -166,6 +186,23 @@
          flex-wrap: wrap;
         width:100%;
 
+        }
+    }
+    @media @tablet{
+    
+        .container{
+            width:100%;
+        }
+        .Pl .whoishe{
+            img{
+                display:none;
+            }
+        }
+        .aboutus{
+            img{
+                width:80%;
+                margin:0 auto;
+            }
         }
 
     }
