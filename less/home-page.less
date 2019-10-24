@@ -38,16 +38,15 @@
         background-color: @main-color;
         text-align: center;
         @media @phone {
-            width: 50%;
-            height: 60px;
+            width: 35%;
+            height: 46px;
         }
         .login {
-            font-size: 2rem;
-            letter-spacing: -0.1rem;
+            font-size: 2.5rem;
+            text-align: center;
             @media @phone {
                 font-size: 3rem;
                 text-align: center;
-                padding: 2%;
                 margin-left: 2%;
             }
         }
@@ -96,18 +95,28 @@
           margin-left: 40px;
         @media @tablet {
             margin-top: 20px;
+        @media @phone {
+            margin-left: 0px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-evenly;
+        }
           }
           h2 {
               font-size: 3.5rem;
               @media @phone {
                   font-size: 3.25rem;
+                  
               }
               
           }
           p {
               margin-top: 20px;
+              font-size: 1.8rem;
               @media @phone {
                   font-size: 2rem;
+                  margin-left: 2%;
               }
           }
           .share-button {
@@ -118,7 +127,7 @@
               margin-top: 20px;
               @media @phone {
                   width: 140px;
-                  height: 50px;
+                  height: 43px;
               }
               .share-button-title {
                   font-size: 1.8rem;
@@ -144,6 +153,7 @@
     @media @phone {
         display: flex;
         flex-direction: column;
+        align-items: center;
         .phone-dimensions(100%, 100%);
     }
     .box-info-reverse {
@@ -152,6 +162,12 @@
         margin-right: 10px;
           @media @phone {
               margin-top: 20px;
+              margin-left: 0px;
+              margin-right: 0px;
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              justify-content: space-evenly;
           }
           h2 {
               font-size: 3.5rem;
@@ -161,8 +177,10 @@
           }
           p {
               margin-top: 20px;
+              font-size: 1.8rem;
               @media @phone {
                   font-size: 2rem;
+                  margin-left: 2%;
               }
           }
     }
@@ -175,4 +193,5 @@
         }
     }
   }
+
 

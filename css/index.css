@@ -383,19 +383,18 @@ a {
 }
 @media (max-width: 500px) {
   .heading .login-button {
-    width: 50%;
-    height: 60px;
+    width: 35%;
+    height: 46px;
   }
 }
 .heading .login-button .login {
-  font-size: 2rem;
-  letter-spacing: -0.1rem;
+  font-size: 2.5rem;
+  text-align: center;
 }
 @media (max-width: 500px) {
   .heading .login-button .login {
     font-size: 3rem;
     text-align: center;
-    padding: 2%;
     margin-left: 2%;
   }
 }
@@ -457,6 +456,15 @@ a {
     margin-top: 20px;
   }
 }
+@media (max-width: 800px) and (max-width: 500px) {
+  .share .box-info {
+    margin-left: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+}
 .share .box-info h2 {
   font-size: 3.5rem;
 }
@@ -467,10 +475,12 @@ a {
 }
 .share .box-info p {
   margin-top: 20px;
+  font-size: 1.8rem;
 }
 @media (max-width: 500px) {
   .share .box-info p {
     font-size: 2rem;
+    margin-left: 2%;
   }
 }
 .share .box-info .share-button {
@@ -483,7 +493,7 @@ a {
 @media (max-width: 500px) {
   .share .box-info .share-button {
     width: 140px;
-    height: 50px;
+    height: 43px;
   }
 }
 .share .box-info .share-button .share-button-title {
@@ -509,6 +519,7 @@ a {
   .share-reverse {
     display: flex;
     flex-direction: column;
+    align-items: center;
     width: 100%;
     height: 100%;
   }
@@ -524,6 +535,12 @@ a {
 @media (max-width: 500px) {
   .share-reverse .box-info-reverse {
     margin-top: 20px;
+    margin-left: 0px;
+    margin-right: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
   }
 }
 .share-reverse .box-info-reverse h2 {
@@ -536,10 +553,12 @@ a {
 }
 .share-reverse .box-info-reverse p {
   margin-top: 20px;
+  font-size: 1.8rem;
 }
 @media (max-width: 500px) {
   .share-reverse .box-info-reverse p {
     font-size: 2rem;
+    margin-left: 2%;
   }
 }
 .share-reverse .boxImgTwo {
