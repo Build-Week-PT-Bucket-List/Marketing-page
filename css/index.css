@@ -451,6 +451,11 @@ a {
     margin-top: 20px;
   }
 }
+@media (max-width: 800px) and (max-width: 500px) {
+  .share .box-info {
+    margin-left: 0px;
+  }
+}
 .share .box-info h2 {
   font-size: 3.5rem;
 }
@@ -518,6 +523,8 @@ a {
 @media (max-width: 500px) {
   .share-reverse .box-info-reverse {
     margin-top: 20px;
+    margin-left: 0px;
+    margin-right: 0px;
   }
 }
 .share-reverse .box-info-reverse h2 {
