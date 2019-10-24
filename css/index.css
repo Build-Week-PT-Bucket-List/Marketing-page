@@ -146,6 +146,12 @@ table {
   display: flex;
   letter-spacing: 3px;
 }
+.aboutstyle {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  flex-wrap: wrap;
+}
 * {
   box-sizing: border-box;
 }
@@ -546,17 +552,42 @@ a {
     margin-bottom: 2%;
   }
 }
+@media (max-width: 500px) {
+  body {
+    background-image: none;
+  }
+}
+@media (max-width: 500px) {
+  .container {
+    width: 100%;
+  }
+}
+@media (max-width: 800px) {
+  .container {
+    width: 100%;
+  }
+}
 .aboutus {
   display: flex;
   flex-direction: column;
   margin-top: 3%;
 }
 img {
+  border-radius: 25px;
   margin-top: 2%;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 2%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+@media (max-width: 500px) {
+  img {
+    display: none;
+  }
+}
+@media (max-width: 800px) {
+  img {
+    display: none;
+  }
 }
 .PL {
   margin-bottom: 2%;
@@ -568,9 +599,25 @@ img {
   flex-direction: row;
   justify-content: center;
 }
+@media (max-width: 500px) {
+  .PL .whoishe {
+    margin-top: 10%;
+    width: 100%;
+  }
+}
 .PL img {
   margin-left: 2%;
   border-radius: 50%;
+}
+@media (max-width: 500px) {
+  .PL img {
+    display: none;
+  }
+}
+@media (max-width: 800px) {
+  .PL img {
+    display: none;
+  }
 }
 .PL h1 {
   font-size: 4rem;
@@ -588,6 +635,25 @@ img {
   margin-right: 2%;
   letter-spacing: 3px;
 }
+@media (max-width: 500px) {
+  .PL p {
+    font-size: 16px;
+    margin-left: 5%;
+    margin-right: 5%;
+    animation-duration: 3s;
+    animation-name: slidein;
+  }
+}
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
 .main {
   position: relative;
   margin-bottom: 10px;
@@ -602,6 +668,14 @@ img {
   display: flex;
   letter-spacing: 3px;
 }
+@media (max-width: 500px) {
+  .main .blocks {
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 3%;
+  }
+}
 .main .blocks h3 {
   font-size: 3.25rem;
   font-weight: bold;
@@ -615,6 +689,14 @@ img {
   display: flex;
   letter-spacing: 3px;
   color: #454245;
+}
+@media (max-width: 500px) {
+  .main2 .blocks2 {
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 3%;
+  }
 }
 .main2 .blocks2 h3 {
   font-size: 3.25rem;
@@ -672,65 +754,6 @@ img {
 .main2 .blocks2 .group6 a {
   text-decoration: none;
   color: #454245;
-}
-@media (max-width: 500px) {
-  body {
-    background-image: none;
-  }
-  .container {
-    width: 100%;
-  }
-  .aboutus img {
-    display: none;
-  }
-  .PL .whoishe {
-    margin-top: 10%;
-    width: 100%;
-  }
-  .PL .whoishe img {
-    display: none;
-  }
-  .PL .whoishe p {
-    font-size: 16px;
-    margin-left: 5%;
-    margin-right: 5%;
-    animation-duration: 3s;
-    animation-name: slidein;
-  }
-  @keyframes slidein {
-    from {
-      margin-left: 100%;
-      width: 300%;
-    }
-    to {
-      margin-left: 0%;
-      width: 100%;
-    }
-  }
-  .main .blocks {
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    flex-wrap: wrap;
-  }
-  .main2 .blocks2 {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    width: 100%;
-  }
-}
-@media (max-width: 800px) {
-  .container {
-    width: 100%;
-  }
-  .Pl .whoishe img {
-    display: none;
-  }
-  .aboutus img {
-    width: 80%;
-    margin: 0 auto;
-  }
 }
 footer {
   padding: 25px 0px 0px 0px;

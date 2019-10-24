@@ -1,6 +1,17 @@
 //some cool stuff
-
-
+body{
+    @media @phone{
+        background-image:none;
+    }
+}
+.container{
+    @media @phone{
+        width:100%
+    }
+    @media @tablet{
+        width:100%;
+    }
+}
 
 .aboutus{
     display:flex;
@@ -8,13 +19,15 @@
     margin-top:3%;
     }
     img{
-       //border-radius:25px;
+       border-radius:25px;
         margin-top:2%;
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        margin-bottom:2%
-       
+        .custom-layout(flex-end, center);
+       @media @phone{
+           display:none;
+       }
+       @media @tablet {
+        display: none;
+    }
     }
 
 
@@ -26,14 +39,23 @@
     
     .whoishe{
         background:@blueish;
-       // border-radius:25px;
         display:flex;
         flex-direction: row;
         justify-content: center;
+        @media @phone {
+            margin-top:10%;
+            width:100%;
+        }
     }
         img{
             margin-left:2%;
             border-radius:50%;
+            @media @phone {
+               display:none;
+            }
+            @media @tablet {
+                display:none;
+             }
         }
         h1{
         font-size:4.0rem;
@@ -49,10 +71,30 @@
         text-align: justify;
         margin-right: 2%;
         letter-spacing: 3px;
-        
+        @media @phone {
+           
+            font-size:16px;
+           margin-left:5%;
+           margin-right:5%;
+            animation-duration: 3s;
+            animation-name: slidein;
+          }
+          
+          @keyframes slidein {
+            from {
+              margin-left: 100%;
+              width: 300%; 
+            }
+          
+            to {
+               margin-left: 0%;
+              width: 100%;
+            }
+        }
+         }
 
     }
-}
+
 
 // main styling 
 .main{
@@ -60,7 +102,7 @@
     margin-bottom:10px;
     .changecolor();
     background:#A5C3C6;
-    //border-radius:25px;
+    
 }
 .main2{
     .changecolor();
@@ -69,6 +111,9 @@
 // blocks styling
 .main .blocks {
     .flexnspace();
+    @media @phone {
+        .aboutus();
+     }
      h3{
         .h1effects();
     }
@@ -81,6 +126,9 @@
 .main2 .blocks2{
     .flexnspace();
     .changecolor();
+    @media @phone {
+      .aboutus();
+    }
         h3{
             .h1effects();
             
@@ -99,10 +147,6 @@
            .extra-styling();
         }
 }
-
-// Everything get in formation
-// added in some animation
-// some xtra styling that wouldnt work with nesting 
 .main .blocks .group1{
 	.extra-styling();		
 }
@@ -112,13 +156,11 @@
 .main .blocks .group3{
     .extra-styling();	
 }
-
 .main .blocks .group1 a{
    .no-decor();
 }
 .main .blocks .group2 a{
     .no-decor();
-
 }
 .main .blocks .group3 a{
     .no-decor();
@@ -132,77 +174,3 @@
 .main2 .blocks2 .group6 a{
     .no-decor();
 }
-// media breakpoints
-// took background img out... was loading too slow
-@media @phone {
-    body{
-        background-image: none;
-    }
-    .container{
-        width:100%
-    }
-    .aboutus{
-        img{
-            display:none;
-        }
-    }
-    .PL .whoishe{
-        
-         margin-top:10%;
-         width:100%;
-        img{
-            display:none;
-        }
-        p{
-            font-size:16px;
-           margin-left:5%;
-           margin-right:5%;
-            animation-duration: 3s;
-            animation-name: slidein;
-          }
-          
-          @keyframes slidein {
-            from {
-              margin-left: 100%;
-              width: 300%; 
-            }
-          
-            to {
-              margin-left: 0%;
-              width: 100%;
-            }
-        }
-    }
-    .main .blocks{
-        display:flex;
-        flex-direction: row;
-        width:100%; 
-        flex-wrap: wrap;
-       
-    }
-    .main2 .blocks2{
-        display:flex;
-         flex-direction: row;
-         flex-wrap: wrap;
-        width:100%;
-
-        }
-    }
-    @media @tablet{
-    
-        .container{
-            width:100%;
-        }
-        .Pl .whoishe{
-            img{
-                display:none;
-            }
-        }
-        .aboutus{
-            img{
-                width:80%;
-                margin:0 auto;
-            }
-        }
-
-    }
