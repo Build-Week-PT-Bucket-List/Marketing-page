@@ -6,7 +6,8 @@
     width: 100%;
     height: 300px;
     @media @phone {
-        .phone-dimensions(230%, 720px);
+        .phone-dimensions(100%, 100%);
+        padding-top: 50px;
     }
     h1 {
         font-size: 4.3rem;
@@ -14,14 +15,15 @@
         border-bottom: 3px solid @lightest-grey;
         margin-bottom: 20px;
         @media @phone {
-            font-size: 7rem;
+            font-size: 5rem;
         }
     }
     .title-info {
         letter-spacing: 0.3rem;
         margin-bottom: 20px;
         @media @phone {
-            font-size: 4rem;
+            font-size: 3rem;
+            text-align: center;
         }
     }
     .login-button {
@@ -31,17 +33,19 @@
         margin-bottom: 50px;
         height: 35px;
         display: flex;
+        justify-content: center;
         align-items: baseline;
         background-color: @main-color;
+        text-align: center;
         @media @phone {
-            width: 30%;
+            width: 50%;
             height: 60px;
         }
         .login {
             font-size: 2rem;
             letter-spacing: -0.1rem;
             @media @phone {
-                font-size: 3.5rem;
+                font-size: 3rem;
                 text-align: center;
                 padding: 2%;
                 margin-left: 2%;
@@ -52,7 +56,7 @@
         font-size: 2.5rem;
         margin-bottom: 20px;
         @media @phone {
-            font-size: 3.5rem;
+            font-size: 3rem;
         }
     }
     .arrow {
@@ -75,7 +79,7 @@
       @media @phone {
           display: flex;
           flex-direction: column-reverse;
-          .phone-dimensions(230%, 720px);
+          .phone-dimensions(100%, 100%);
       }
       .boxImgOne {
           width: 470px;
@@ -83,6 +87,8 @@
           border-radius: 0;
           @media @phone {
               margin-bottom: 2%;
+              height: auto;
+              width: 100%;
           }
       }
       .box-info {
@@ -94,14 +100,14 @@
           h2 {
               font-size: 3.5rem;
               @media @phone {
-                  font-size: 5rem;
+                  font-size: 3.25rem;
               }
               
           }
           p {
               margin-top: 20px;
               @media @phone {
-                  font-size: 2.8rem;
+                  font-size: 2rem;
               }
           }
           .share-button {
@@ -111,13 +117,13 @@
               background-color: @main-color;
               margin-top: 20px;
               @media @phone {
-                  width: 160px;
+                  width: 140px;
                   height: 50px;
               }
               .share-button-title {
                   font-size: 1.8rem;
                   @media @phone {
-                      font-size: 2.5rem;
+                      font-size: 2rem;
                   }
               }
           }
@@ -138,7 +144,7 @@
     @media @phone {
         display: flex;
         flex-direction: column;
-        .phone-dimensions(230%, 720px);
+        .phone-dimensions(100%, 100%);
     }
     .box-info-reverse {
         .box-info-layout(column, space-evenly);
@@ -150,13 +156,13 @@
           h2 {
               font-size: 3.5rem;
               @media @phone {
-                  font-size: 5rem;
+                  font-size: 3.25rem;
               }
           }
           p {
               margin-top: 20px;
               @media @phone {
-                  font-size: 2.8rem;
+                  font-size: 2rem;
               }
           }
     }
