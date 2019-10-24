@@ -553,11 +553,6 @@ a {
   }
 }
 @media (max-width: 500px) {
-  body {
-    background-image: none;
-  }
-}
-@media (max-width: 500px) {
   .container {
     width: 100%;
   }
@@ -670,10 +665,10 @@ img {
 }
 @media (max-width: 500px) {
   .main .blocks {
-    margin-top: 15px;
     display: flex;
-    flex-direction: column;
-    margin-top: 3%;
+    flex-direction: row;
+    width: 100%;
+    flex-wrap: wrap;
   }
 }
 .main .blocks h3 {
@@ -681,7 +676,7 @@ img {
   font-weight: bold;
   text-shadow: 2px 2px 4px black;
 }
-.main .blocks h4 {
+h4 {
   font-size: 2rem;
   color: #454245;
 }
@@ -692,10 +687,10 @@ img {
 }
 @media (max-width: 500px) {
   .main2 .blocks2 {
-    margin-top: 15px;
     display: flex;
-    flex-direction: column;
-    margin-top: 3%;
+    flex-direction: row;
+    width: 100%;
+    flex-wrap: wrap;
   }
 }
 .main2 .blocks2 h3 {
