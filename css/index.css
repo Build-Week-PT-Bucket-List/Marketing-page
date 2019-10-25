@@ -392,7 +392,7 @@ a {
 }
 @media (max-width: 500px) {
   .heading .login-button {
-    width: 45%;
+    width: 50%;
     height: 46px;
   }
 }
@@ -595,7 +595,7 @@ a {
   flex-direction: column;
   margin-top: 3%;
 }
-img {
+.aboutUsImg {
   border-radius: 25px;
   margin-top: 2%;
   display: flex;
@@ -603,12 +603,12 @@ img {
   align-items: center;
 }
 @media (max-width: 500px) {
-  img {
+  .aboutUsImg {
     display: none;
   }
 }
 @media (max-width: 800px) {
-  img {
+  .aboutUsImg {
     display: none;
   }
 }
@@ -628,17 +628,17 @@ img {
     width: 100%;
   }
 }
-.PL img {
+.PL .aboutUsImg {
   margin-left: 2%;
   border-radius: 50%;
 }
 @media (max-width: 500px) {
-  .PL img {
+  .PL .aboutUsImg {
     display: none;
   }
 }
 @media (max-width: 800px) {
-  .PL img {
+  .PL .aboutUsImg {
     display: none;
   }
 }
