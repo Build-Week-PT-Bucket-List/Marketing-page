@@ -5,9 +5,14 @@
     flex-wrap: wrap;
 }
 
- .phone-dimensions(@width, @height) {
-    width: @width;
-    height: @height;
+.phone-layout {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+ .phone-dimensions {
+    width: 100%;
+    height: 100%;
 }
 .extra-styling{
     width:900px;
